@@ -1,0 +1,242 @@
+
+/* Styles pour le corps de la page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  }
+  
+  /* Styles pour l'en-tête */
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 95vh;
+  }
+  
+  nav > ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  nav li {
+    list-style-type: none;
+  }
+  
+  nav > ul > li {
+    float: left;
+  }
+  
+  .submenu {
+    display: none;
+  }
+  
+  nav input[type="checkbox"] {
+    display: none;
+  }
+  
+  .menu-mobile {
+    display: none;
+  }
+  
+  nav {
+    width: 100%;
+    background-color: #C0C0C0;
+  }
+  nav > ul > li {
+    float: left;
+    position: relative;
+  }
+  nav > ul::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  nav a {
+    display: inline-block;
+    text-decoration: none;
+  }
+  nav > ul > li > a {
+    padding: 20px 30px;
+    color: #000000;
+  }
+  nav li:hover .submenu {
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 10000;
+  }
+  .submenu li {
+    border-bottom: 1px solid #ccc;
+  }
+  .submenu li a {
+    padding: 15px 30px;
+    font-size: 13px;
+    color: #222538;
+    width: 270px;
+  }
+  
+  /* ----------- NAV HEADER TOP HOVER ----------- */
+  
+  .menu-animaux:hover {
+    border-top: 5px solid #8BC34A;
+    background-color: rgba(139, 195, 74, 0.15);
+  }
+  .menu-personnel:hover {
+    border-top: 5px solid #FFC107;
+    background-color: rgba(255, 193, 7, 0.15);
+  }
+  .menu-contact:hover {
+    border-top: 5px solid #FF5722;
+    background-color: rgba(255, 87, 34, 0.15);
+  }
+  .menu-deco:hover {
+    border-top: 5px solid #607D8B;
+    background-color: rgba(96, 125, 139, 0.15);
+  }
+  nav > ul > li:hover a {
+    padding: 15px 30px 20px 30px;
+  }
+  
+  /* ----------- NAV HEADER STYLE ----------- */
+  
+  .menu-animaux .submenu {
+    background-color: #689F38;
+  }
+  .menu-personnel .submenu {
+    background-color: #FFEB3B;
+  }
+  
+  /* -----------  ----------- */
+  
+  .submenu li:hover a {
+    color: #eee;
+    font-weight: bold;
+  }
+  
+  /* ----------- NAV HEADER RUBRIQUE HOVER  ----------- */
+  
+  .menu-animaux .submenu li:hover {
+    background-color: #558B2F;
+  }
+  .menu-personnel .submenu li:hover {
+    background-color: #FBC02D;
+  }
+  
+
+
+  /* Styles pour la section Hero */
+  .hero {
+  background-image: url(https://lepetitnancay.com/wp-content/uploads/2017/10/banniere-zoo-beauval.jpg);
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  }
+  
+  .hero h2 {
+  font-size: 3em;
+  margin: 0;
+  }
+  
+  .hero p {
+  font-size: 1.2em;
+  margin: 20px 0;
+  text-align: center;
+  }
+  
+  .cta {
+  background-color: #90be6d;
+  border: none;
+  color: #fff;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  }
+  
+  .cta:hover {
+  background-color: #2d6a4f;
+  }
+  
+  /* Styles pour la section Animaux */
+  .featured-animals {
+  margin: 50px 0;
+  }
+  
+  .featured-animals h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: center;
+  }
+  
+  .featured-animals ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }
+  
+  .featured-animals li {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  flex-basis: calc(33.33% - 20px);
+  padding: 20px;
+  }
+  
+  .featured-animals img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  }
+  
+  .featured-animals h3 {
+  font-size: 1.5em;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  }
+  
+  .featured-animals p {
+  font-size: 1.2em;
+  margin: 0;
+  }
+  
+  /* Styles pour la section Activités */
+  .activities {
+  margin: 50px 0;
+  }
+  
+  .activities h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: center;
+  }
+  
+  .activities ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }
+  
+  .activities li {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  box-shadow: 0 0 10
+  }
+  .contact {
+    height: 300px;
+    width: 500px;
+    font-size: 3.5em;
+}
+.logogauche {
+  float: left;
+}
